@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Função para calcular o quadrado de um número
+function calcularQuadrado(numero) {
+    return numero * numero;
+}
+
+// Função principal para ler os valores e calcular o quadrado
+function main() {
+    var valores = [];
+    
+    // Loop para ler os valores
+    for (var i = 0; i < 3; i++) {
+        var valor = parseFloat(prompt("Digite o " + (i + 1) + "º valor:"));
+        valores.push(valor);
+    }
+    
+    // Calcula o quadrado de cada valor
+    var quadrados = [];
+    for (var i = 0; i < valores.length; i++) {
+        quadrados.push(calcularQuadrado(valores[i]));
+    }
+    
+    // Imprime os quadrados calculados
+    console.log("Os quadrados dos valores são:");
+    for (var i = 0; i < quadrados.length; i++) {
+        console.log(quadrados[i]);
+    }
+}
+
+// Chama a função principal
+main();
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>// Função para ordenar os valores em ordem crescente
+        function ordenarCrescente(valores) {
+            return valores.sort(function(a, b) {
+                return a - b;
+            });
+        }
+        
+        // Função principal para ler os valores e imprimir em ordem crescente
+        function main() {
+            var valores = [];
+            
+            // Loop para ler os valores
+            for (var i = 0; i < 5; i++) {
+                var valor = parseFloat(prompt("Digite o " + (i + 1) + "º valor:"));
+                valores.push(valor);
+            }
+            
+            // Ordena os valores em ordem crescente
+            valores = ordenarCrescente(valores);
+            
+            // Imprime os valores em ordem crescente
+            console.log("Valores em ordem crescente:");
+            for (var i = 0; i < valores.length; i++) {
+                console.log(valores[i]);
+            }
+        }
+        
+        // Chama a função principal
+        main();
+        </script>
+    
+</body>
+</html>
